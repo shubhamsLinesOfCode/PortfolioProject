@@ -826,6 +826,14 @@ video {
   width: max-content;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-2\.5 {
+  width: 0.625rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
