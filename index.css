@@ -427,3 +427,39 @@ section{
   .hover\:animate-fade-scale:hover {
     animation: fade-scale 0.5s ease-in-out forwards;
   }
+
+  @media (min-width: 768px) and (max-width:990px) {
+    .positioning{
+        position: absolute;
+    bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    height: 80%;
+    font-size: 13px;
+    }
+    .projTitleContainer{
+        flex: 1 1 0%;
+        overflow:hidden;
+        white-space: normal;    /* Enables multiline text wrapping */
+    }
+    .projTitleContainer span{
+        line-height: 1;
+    }
+  }
+
+  div div a:nth-child(1){
+    @apply hover:-translate-x-1 hover:-translate-y-1 duration-300;
+  }
+  div div a:nth-child(2){
+    @apply hover:translate-x-1 hover:-translate-y-1 duration-300;
+  }
+
+  body > div:nth-of-type(2) img {
+    /* Your transition and animation styles here */
+    transition: transform 0.3s ease; /* Example transition */
+  }
+  body > div:nth-of-type(2) img:hover {
+    /* Animation when the img is hovered */
+    transform: scale(1.05);
+    cursor:pointer; /* Example scaling effect */
+  }
