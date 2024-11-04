@@ -1,0 +1,429 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    padding: 6px;
+}
+
+/* Hide the full content and "Read less" label by default */
+/* Default: Show ellipsis and hide full content */
+/* Default: Show ellipsis and hide full content */
+/* Default: Show ellipsis and hide full content */
+.ellipsis {
+    display: inline;
+  }
+  
+  .hidden-content {
+    display: none;
+  }
+  
+  #toggleText1:checked ~ p .ellipsis {
+    display: none;
+  }
+  
+  #toggleText1:checked ~ p .hidden-content {
+    display: inline;
+  }
+  
+  #toggleText1:checked ~ label .show-more {
+    display: none;
+  }
+  
+  #toggleText1:checked ~ label .show-less {
+    display: inline;
+  }
+
+
+  #toggleText2:checked ~ p .ellipsis {
+    display: none;
+  }
+  
+  #toggleText2:checked ~ p .hidden-content {
+    display: inline;
+  }
+  
+  #toggleText2:checked ~ label .show-more {
+    display: none;
+  }
+  
+  #toggleText2:checked ~ label .show-less {
+    display: inline;
+  }
+
+
+  
+  #toggleText3:checked ~ p .ellipsis {
+    display: none;
+  }
+  
+  #toggleText3:checked ~ p .hidden-content {
+    display: inline;
+  }
+  
+  #toggleText3:checked ~ label .show-more {
+    display: none;
+  }
+  
+  #toggleText3:checked ~ label .show-less {
+    display: inline;
+  }
+
+
+
+  #toggleText4:checked ~ p .ellipsis {
+    display: none;
+  }
+  
+  #toggleText4:checked ~ p .hidden-content {
+    display: inline;
+  }
+  
+  #toggleText4:checked ~ label .show-more {
+    display: none;
+  }
+  
+  #toggleText4:checked ~ label .show-less {
+    display: inline;
+  }
+
+  /* Style the span as a button */
+  .toggle-btn {
+    cursor: pointer;
+    text-decoration: none;
+  } 
+  
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+    width: 500px;
+    height: 490px;
+    padding: 25px 30px;
+}
+.heading{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+    margin-bottom: 30px;
+}
+
+.horizontal-bars .bar{
+    margin: 40px 0;
+}
+.horizontal-bars .bar:first-child{
+    margin-top: 0;
+}
+.horizontal-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.horizontal-bars .bar .info{
+    margin-bottom: 5px;
+}
+.horizontal-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;   
+    opacity: 0;
+}
+
+.horizontal-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.horizontal-bars .bar .progress-line span{
+    height: 100%;
+    background-color: hsl(29, 100%, 75%);
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 60%;
+}
+.progress-line.javascript span{
+    width: 85%;
+}
+.progress-line.python span{
+    width: 50%;
+}
+.progress-line.mysql span{
+    width: 75%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;   
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "60%";
+}
+.progress-line.javascript span::after{
+    content: "85%";
+}
+.progress-line.python span::after{
+    content: "50%";
+}
+.progress-line.mysql span::after{
+    content: "75%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color:#000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;   
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502; 
+    stroke-dashoffset: 502;
+    stroke-linecap: round; 
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: hsl(29, 100%, 75%);
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round; 
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+
+
+@keyframes  animate-path1{
+    100%{
+    stroke-dashoffset: 150;
+    }
+}
+@keyframes  animate-path2{
+    100%{
+    stroke-dashoffset: 40;
+    }
+}
+@keyframes  animate-path3{
+    100%{
+    stroke-dashoffset: 125;
+    }
+}
+@keyframes  animate-path4{
+    100%{
+    stroke-dashoffset: 75;
+    }
+}
+
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+
+}
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.projects > div {
+    position: relative; /* Ensures the pseudo-element positions relative to this div */
+}
+.projects > div:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./myImages/1.webp); /* Test with a semi-transparent color */
+    z-index: -1;
+}
+.projects > div:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./myImages/pexels-jakubzerdzicki-19701594.jpg); /* Test with a semi-transparent color */
+    z-index: -1;
+}
+.projects > div:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url(./myImages/AdobeStock_85416890-1024x684.jpeg); /* Test with a semi-transparent color */
+}
+.projects > div:nth-child(4)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url(./myImages/jeography-zero-SP2w4s4MrlU-unsplash-scaled.jpg); /* Test with a semi-transparent color */
+}
+.projects > div:nth-child(5)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url(./myImages/Photography-Styles-Which-One-Is-Right-for-You-5-1024x576.webp); /* Test with a semi-transparent color */
+}
+.projects > div:nth-child(6)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url(./myImages/pexels-dairy-422218.jpg); /* Test with a semi-transparent color */
+}
+
+.projIconContainer{
+    border: 1.5px solid black
+}
+
+@media (max-width: 390px) {
+    section .container:nth-child(1), 
+    section .container:nth-child(2) {
+      width: 330px;
+    }   
+  }
+
+@media (max-width: 490px) and (min-width:391px){
+    section .container:nth-child(1), 
+    section .container:nth-child(2) {
+      width: 420px;
+    }  
+  }
+
+  .positioning {
+    @apply absolute w-4/5 
+    bottom-2 mb-2 ml-2
+  }
+
+  @keyframes fade-scale {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .hover\:animate-fade-scale:hover {
+    animation: fade-scale 0.5s ease-in-out forwards;
+  }

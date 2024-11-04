@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="poutput.css" />
+    <link
+      rel="shortcut icon"
+      href="./2530782_bag_briefcase_business bag_documents bag_general_icon.png"
+      type="image/x-icon"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body class="dark:bg-[#122620] dark:text-white overflow-x-hidden">
+    <div class="-z-10 -translate-y-[80%] fixed top-0 right-0 dark:hidden">
+      <img
+        class="rotate-180 opacity-35"
+        src="./myImages/v904-nunny-012.jpg"
+        alt="backGroundGradient"
+      />
+    </div>
+    <nav
+      class="w-full flex top-0 left-0 items-center justify-between pb-3 fixed pr-3 z-50 bg-opacity-50 backdrop-blur-md dark:bg-[#122620] dark:backdrop-blur-md dark:shadow-white/20"
+    >
+      <img
+        class="w-32 cursor-pointer rounded-lg dark:hidden"
+        src="./myImages/11.png"
+        alt="logoImg"
+      />
+      <img
+        class="w-32 cursor-pointer rounded-lg hidden dark:block"
+        src="./myImages/22.png"
+        alt="logoImg"
+      />
+      <ul
+        class="hidden rounded-2xl md:flex text-sm md:text-base gap-4 md:gap-7 justify-center shadow px-6 py-2 md:px-11 md:py-2"
+      >
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">My Work</a></li>
+      </ul>
+      <div class="toggleAndContact flex gap-3">
+        <button id="theme-toggle-button" onclick="toggleTheme()">
+          <img class="w-5 dark:hidden" src="./myImages/moon_icon.png" alt="toggleIcon" />
+          <img class="w-5 hidden dark:block" src="./myImages/brightness.png" alt="toggleIcon" />
+        </button>
+        <a
+          class="rounded-full hidden border md:flex items-center gap-3 px-10 py-2.5 border-gray-900 dark:border-white"
+          href="#ContactMe"
+          >Contact
+          <img
+            class="w-2 dark:hidden"
+            src="./myimages/arrow-icon.png"
+            alt="altText"
+          />
+          <img
+            class="w-2 hidden dark:block"
+            src="./myimages/arrow-icon-dark.png"
+            alt="altText"
+          />
+        </a>
+
+        <button class="block md:hidden ml-3 " onclick="openMenu()">
+          <img src="./myImages/menu-black.png" alt="menuIcon" class="w-6 dark:hidden"/>
+          <img src="./myImages/menu-white.png" alt="menuIcon" class="w-6 hidden dark:block"/>
+        </button>
+      </div>
+      <!-- ----------------------------------- mobile menu ---------------------- -->
+       <ul id="sideMenu" class="flex md:hidden gap-4 flex-col py-20 px-10 fixed top-0 bottom-0 -right-64 w-64 z-50 h-screen bg-rose-50 dark:bg-[#122620] dark:text-white transition duration-500">
+
+        <div class="absolute top-6 right-6" onclick="closeMenu()">
+          <img src="./myImages/close-black.png" alt="placeholder" class="dark:hidden w-5 cursor-pointer"/>
+          <img src="./myImages/close-white.png" alt="placeholder" class="hidden dark:block w-5 cursor-pointer"/>
+        </div>
+
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#aboutMe" onclick="closeMenu()">About Me</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#projects" onclick="closeMenu()">My Work</a></li>
+        <li><a href="#ContactMe" onclick="closeMenu()">Contact Me</a></li>
+       </ul>
+    </nav>
+    <br />
+    <div class="flex flex-col items-center mt-14 mb-6 gap-6">
+      <img
+        class="w-32 rounded-full mt-1.5"
+        src="./myImages/myPic.jpg"
+        alt="Shubham's Pic"
+      />
+      <h3 class="text-xl">Hi! I'm Shubham Paul</h3>
+      <h1 class="text-4xl pl-2">full stack developer based in India.</h1>
+      <p class="pl-2">I am a full stack web developer with 2 years of experience</p>
+      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a
+          href="#contact"
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
+          >contact me
+          <img src="./myImages/right-arrow-dark.png" alt="" class="w-4" /></a
+        ><a
+          href="../../dev-icon.png"
+          download=""
+          class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
+          >my resume <img src="./myImages/download-icon.png" alt="" class="w-4"
+        /></a>
+      </div>
+    </div>
+
+    <!-- ------------------------------- about me ----------------------------- -->
+    <div class="w-full px-[12%] pt-10 pb-5 scroll-mt-20" id="aboutMe">
+      <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+      <h2 class="text-center text-5xl font-Ovo">About me</h2>
+      <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+          <img
+            src="./myImages/myPic.jpg"
+            alt=""
+            class="w-64 sm:w-80 rounded-3xl max-w-none hover:animate-fade-scale"
+          />
+        </div>
+        <div class="flex-1">
+          <p class="mb-5 max-w-2xl font-Ovo text-justify">
+            I am an experienced Frontend Developer with over one and half years
+            of professional expertise in the field. Throughout my career, I have
+            had the privilege of collaborating with prestigious organizations,
+            contributing to their success and growth.
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-3 max-w-2xl">
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-[#172f28]"
+            >
+              <img
+                src="./myImages/graduate-hat.png"
+                alt=""
+                class="w-6 mt-3 dark:hidden"
+              />
+              <img
+                src="./myImages/graduation-hat.png"
+                alt=""
+                class="w-6 mt-3 hidden dark:block"
+              />
+              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
+                Education
+              </h3>
+              <p class="text-gray-600 text-sm dark:text-white/80">
+                B.E. in Computer Science
+              </p>
+            </li>
+            <li
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-[#172f28]"
+            >
+              <img
+                src="./myImages/code.png"
+                alt=""
+                class="w-6 mt-3 dark:hidden"
+              />
+              <img
+                src="./myImages/coding.png"
+                alt=""
+                class="w-6 mt-3 hidden dark:block"
+              />
+              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
+                Languages
+              </h3>
+              <p class="text-gray-600 text-sm dark:text-white/80">
+                HTML, CSS, JavaScript React Js, Next Js
+              </p>
+            </li>
+          </ul>
+          <h4 class="my-6 text-gray-700 font-Ovo dark:text-white/80">
+            My Social Links/Tools I use
+          </h4>
+          <ul class="flex items-center gap-3 sm:gap-5">
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img
+                src="./myImages/5296514_bird_tweet_twitter_twitter logo_icon.png"
+                alt=""
+                class="w-5 sm:w-7"
+              />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img
+                src="./myImages/317735_career_linkedin_icon.png"
+                alt=""
+                class="w-5 sm:w-7"
+              />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img
+                src="./myImages/1298743_github_git_logo_social_icon.png"
+                alt=""
+                class="w-5 sm:w-7"
+              />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img
+                src="./myImages/2993773_git_social media_icon.png"
+                alt=""
+                class="w-5 sm:w-7"
+              />
+            </li>
+            <li
+              class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+            >
+              <img
+                src="./myImages/9805191_vs code_logo_microsoft_visual studio code_code_icon.png"
+                alt=""
+                class="w-5 sm:w-7 dark:hidden"
+              />
+              <img
+                src="./myImages/9805163_logo_microsoft_vs code_visual studio code_code_icon.png"
+                alt=""
+                class="w-8 sm:w-7 dark:block hidden"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------- skills section ---------------------------- -->
+
+    <div class="mt-6" id="skills">
+      <div class="skillsSectionHeading flex items-center justify-center">
+        <h2 class="heading text-3xl">Skills I hone</h2>
+      </div>
+      <section class="flex-col sm:flex-row">
+        <div class="container">
+          <div class="horizontal-bars">
+            <div class="bar">
+              <div class="info">
+                <span>HTML</span>
+              </div>
+              <div class="progress-line html">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>CSS</span>
+              </div>
+              <div class="progress-line css">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>JavaScript</span>
+              </div>
+              <div class="progress-line javascript">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Python</span>
+              </div>
+              <div class="progress-line python">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>MySQL</span>
+              </div>
+              <div class="progress-line mysql">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="radial-bars">
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">70%</div>
+              <div class="text">Creativity</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">92%</div>
+              <div class="text">Communication</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">75%</div>
+              <div class="text">Problem Solving</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">85%</div>
+              <div class="text">Teamwork</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ---------------------- services -----------! -->
+    <div class="flex flex-col items-center gap-5" id="services">
+      <h3 class="text-lg">What we offer</h3>
+      <h1 class="text-4xl">Our Services</h1>
+      <!-- <p class="">I am a full stack web developer with 2 years of experience</p> -->
+    </div>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-[8%] py-[6%]"
+    >
+      <div
+        class="p-3 border border-gray-400 rounded-lg flex-col flex items-center hover:shadow-[4px_4px_0_#54473F] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#172f28] dark:hover:shadow-white"
+      >
+        <img
+          class="w-9 mb-1.5 dark:hidden"
+          src="./myImages/2657567_media_social_web_website_icon (1).png"
+          alt="webDesign logo"
+        />
+        <img
+          class="w-9 mb-1.5 dark:block hidden"
+          src="./myImages/web.png"
+          alt="webDesign logo"
+        />
+
+        <h3 class="mb-1.5">Web design certification</h3>
+
+        <!-- Hidden Checkbox for Toggling -->
+        <input type="checkbox" id="toggleText1" class="hidden" />
+
+        <!-- Text Content with Conditional Ellipsis -->
+        <p class="mb-1.5 text-sm text text-justify">
+          Our interface & tutorial styles are user-friendly, making the learning
+          curve enjoyable for everyone. You can also find related courses on
+          <span class="ellipsis text-justify">...</span>
+          <!-- Full Text to Show on Toggle -->
+          <span class="hidden-content text-justify">
+            web design certifications on more topics, including accessibility,
+            Figma integrations, and ecommerce. No matter which web design skill
+            you’re trying to learn, Webflow’s courses have you covered.
+          </span>
+        </p>
+
+        <!-- Read More / Read Less Toggle, Styled as Button -->
+        <label for="toggleText1" class="cursor-pointer">
+          <span class="toggle-btn text-neutral-600 dark:text-white">
+            <span class="show-more"
+              >Read more...
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/right-arrow.png"
+                alt="minus-icon"
+            /></span>
+            <span class="show-less hidden"
+              >Read less
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/9042803_minus_icon.png"
+                alt="minus-icon"
+            /></span>
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/9042803_minus_icon.png"
+                alt="minus-icon"
+            /></span>
+          </span>
+        </label>
+      </div>
+      <div
+        class="p-3 border border-gray-400 rounded-lg flex flex-col items-center hover:shadow-[4px_4px_0_#54473F] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#172f28] dark:hover:shadow-white"
+      >
+        <img
+          class="w-9 mb-1.5 dark:hidden"
+          src="./myImages/115416_aws_icon (1).png"
+          alt="webDesign logo"
+        />
+        <img
+          class="w-9 mb-1.5 hidden dark:block"
+          src="./myImages/2916320_aws_marketing_media_social_website_icon.png"
+          alt="webDesign logo"
+        />
+
+        <h3 class="mb-1.5">AWS Cloud certification</h3>
+
+        <!-- Hidden Checkbox for Toggling -->
+        <input type="checkbox" id="toggleText2" class="hidden" />
+
+        <!-- Text Content with Conditional Ellipsis -->
+        <p class="mb-1.5 text-sm text-justify">
+          Our interface & tutorial styles are user-friendly, making the learning
+          curve enjoyable for everyone. You can also find related courses on
+          <span class="ellipsis text-justify">...</span>
+          <!-- Full Text to Show on Toggle -->
+          <span class="hidden-content text-justify">
+            web design certifications on more topics, including accessibility,
+            Figma integrations, and ecommerce. No matter which web design skill
+            you’re trying to learn, Webflow’s courses have you covered.
+          </span>
+        </p>
+
+        <!-- Read More / Read Less Toggle, Styled as Button -->
+        <label for="toggleText2" class="cursor-pointer">
+          <span class="toggle-btn text-neutral-600 dark:text-white underline">
+            <span class="show-more"
+              >Read more...
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/right-arrow.png"
+                alt="minus-icon"
+            /></span>
+            <span class="show-less hidden"
+              >Read less
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/9042803_minus_icon.png"
+                alt="minus-icon"
+            /></span>
+          </span>
+        </label>
+      </div>
+      <div
+        class="p-3 border border-gray-400 rounded-lg flex flex-col items-center hover:shadow-[4px_4px_0_#54473F] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#172f28] dark:hover:shadow-white"
+      >
+        <img class="w-9 mb-1.5 dark:hidden" src="./myImages/atom.png" alt="react logo" />
+        <img class="w-9 mb-1.5 hidden dark:block" src="./myImages/physics.png" alt="react logo" />
+        <h3 class="mb-1.5">ReactJs certification</h3>
+
+        <!-- Hidden Checkbox for Toggling -->
+        <input type="checkbox" id="toggleText3" class="hidden" />
+
+        <!-- Text Content with Conditional Ellipsis -->
+        <p class="mb-1.5 text-sm text-justify">
+          Our interface & tutorial styles are user-friendly, making the learning
+          curve enjoyable for everyone. You can also find related courses on
+          <span class="ellipsis text-justify">...</span>
+          <!-- Full Text to Show on Toggle -->
+          <span class="hidden-content text-justify">
+            web design certifications on more topics, including accessibility,
+            Figma integrations, and ecommerce. No matter which web design skill
+            you’re trying to learn, Webflow’s courses have you covered.
+          </span>
+        </p>
+
+        <!-- Read More / Read Less Toggle, Styled as Button -->
+        <label for="toggleText3" class="cursor-pointer">
+          <span class="toggle-btn text-neutral-600 dark:text-white underline">
+            <span class="show-more"
+              >Read more...
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/right-arrow.png"
+                alt="minus-icon"
+            /></span>
+            <span class="show-less hidden"
+              >Read less
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/9042803_minus_icon.png"
+                alt="minus-icon"
+            /></span>
+          </span>
+        </label>
+      </div>
+      <div
+        class="p-3 border border-gray-400 rounded-lg flex flex-col items-center hover:shadow-[4px_4px_0_#54473F] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#172f28] dark:hover:shadow-white"
+      >
+        <img
+          class="w-9 mb-1.5 dark:hidden"
+          src="./myImages/layer.png"
+          alt="webDesign logo"
+        />
+        <img
+          class="w-9 mb-1.5 hidden dark:block"
+          src="./myImages/layers.png"
+          alt="webDesign logo"
+        />
+        <h3 class="mb-1.5">Full Stack certification</h3>
+
+        <!-- Hidden Checkbox for Toggling -->
+        <input type="checkbox" id="toggleText4" class="hidden" />
+
+        <!-- Text Content with Conditional Ellipsis -->
+        <p class="mb-1.5 text-sm text-justify">
+          Our interface & tutorial styles are user-friendly, making the learning
+          curve enjoyable for everyone. You can also find related courses on
+          <span class="ellipsis text-justify">...</span>
+          <!-- Full Text to Show on Toggle -->
+          <span class="hidden-content text-justify">
+            web design certifications on more topics, including accessibility,
+            Figma integrations, and ecommerce. No matter which web design skill
+            you’re trying to learn, Webflow’s courses have you covered.
+          </span>
+        </p>
+
+        <!-- Read More / Read Less Toggle, Styled as Button -->
+        <label for="toggleText4" class="cursor-pointer">
+          <span class="toggle-btn text-neutral-600 dark:text-white underline">
+            <span class="show-more"
+              >Read more...
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/right-arrow.png"
+                alt="minus-icon"
+            /></span>
+            <span class="show-less hidden"
+              >Read less
+              <img
+                class="w-4 h-3 inline"
+                src="./myImages/9042803_minus_icon.png"
+                alt="minus-icon"
+            /></span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <!-- ---------------------- Projects -----------! -->
+    <div class="flex justify-center items-center gap-4" id="projects">
+      <h3 class="text-3xl inline-block">Projects</h3>
+      <h1 class="text-3xl inline-block text-[#d97b24] dark:text-orange-300">
+        We worked on
+      </h1>
+      <!-- <p class="">I am a full stack web developer with 2 years of experience</p> -->
+    </div>
+
+    <div
+      class="grid grid-cols-1 projects sm:grid-cols-2 md:grid-cols-3 gap-8 px-[8%] py-[6%]"
+    >
+      <div
+        class="p-3 border aspect-square group relative border-gray-400 rounded-lg flex-col flex text-white"
+      >
+        <div
+          class="positioning bg-slate-100 rounded-lg px-2.5 py-3 flex justify-between group-hover:-translate-y-1.5 group-hover:translate-x-1.5 duration-300"
+        >
+          <div class="projTitleContainer w-9/12">
+            <h3 class="mb-1 text-slate-800 font-semibold">
+              Visual Merchandising App
+            </h3>
+            <span class="text-neutral-700 text-sm">
+              An automated app for merchandising at retail stores specifically
+              designed for merchandisers.
+            </span>
+          </div>
+          <div
+            class="w-11 h-11 projIconContainer rounded-full shadow-[2px_2px_0_#000] flex items-center justify-center group-hover:bg-[#ffbd80] transition p-1"
+          >
+            <img
+              class="w-8 group-hover:scale-95 duration-200"
+              src="./myImages/merchandise.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-3 border aspect-square group relative border-gray-400 rounded-lg flex-col flex text-white"
+      >
+        <div
+          class="positioning bg-slate-100 rounded-lg px-2.5 py-3 flex justify-between group-hover:-translate-y-1.5 group-hover:translate-x-1.5 duration-300"
+        >
+          <div class="projTitleContainer w-9/12">
+            <h3 class="mb-1 text-slate-800 font-semibold">
+              Smart WorkSpace management
+            </h3>
+            <span class="text-neutral-700 text-sm">
+              IOT is integrated in an agile workspace, where employees can work
+              in a way that fits their needs.
+            </span>
+          </div>
+          <div
+            class="w-11 h-11 projIconContainer rounded-full shadow-[2px_2px_0_#000] flex items-center justify-center dark:group-hover:bg-[#ffbd80] group-hover:bg-lime-300 transition p-1"
+          >
+            <img
+              class="w-8 group-hover:scale-95 duration-200"
+              src="./myImages/iot.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-3 border aspect-square group relative border-gray-400 rounded-lg flex-col flex text-white"
+      >
+        <div
+          class="positioning bg-slate-100 rounded-lg px-2.5 py-3 flex justify-between group-hover:-translate-y-1.5 group-hover:translate-x-1.5 duration-300"
+        >
+          <div class="projTitleContainer w-9/12">
+            <h3 class="mb-1 text-slate-800 font-semibold">CNDN System</h3>
+            <span class="text-neutral-700 text-sm">
+              Acer store help desk system is used to allow operators to search a
+              particular web order across multiple fields.
+            </span>
+          </div>
+          <div
+            class="w-11 h-11 projIconContainer rounded-full shadow-[2px_2px_0_#000] flex items-center justify-center dark:group-hover:bg-[#ffbd80] group-hover:bg-lime-300 transition p-1"
+          >
+            <img
+              class="w-8 group-hover:scale-95 duration-200"
+              src="./myImages/headphones.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-3 border aspect-square group relative border-gray-400 rounded-lg flex-col flex text-white"
+      >
+        <div
+          class="positioning bg-slate-100 rounded-lg px-2.5 py-3 flex justify-between group-hover:-translate-y-1.5 group-hover:translate-x-1.5 duration-300"
+        >
+          <div class="projTitleContainer w-9/12">
+            <h3 class="mb-1 text-slate-800 font-semibold">
+              Geography Based App
+            </h3>
+            <span class="text-neutral-700 font-normal text-sm">
+              An automated app for merchandising at retail stores specifically
+              designed for merchandisers.
+            </span>
+          </div>
+          <div
+            class="w-11 h-11 projIconContainer rounded-full shadow-[2px_2px_0_#000] flex items-center justify-center dark:group-hover:bg-[#ffbd80] group-hover:bg-lime-300 transition p-1"
+          >
+            <img
+              class="w-8 group-hover:scale-95 duration-200"
+              src="./myImages/geography_social_studies_subject_school_icon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-3 border aspect-square group relative border-gray-400 rounded-lg flex-col flex text-white"
+      >
+        <div
+          class="positioning bg-slate-100 rounded-lg px-2.5 py-3 flex justify-between group-hover:-translate-y-1.5 group-hover:translate-x-1.5 duration-300"
+        >
+          <div class="projTitleContainer w-9/12">
+            <h3 class="mb-1 text-slate-800 font-semibold">Photography Site</h3>
+            <span class="text-neutral-700">
+              An automated app for merchandising at retail stores specifically
+              designed for merchandisers.
+            </span>
+          </div>
+          <div
+            class="w-11 h-11 projIconContainer rounded-full shadow-[2px_2px_0_#000] flex items-center justify-center dark:group-hover:bg-[#ffbd80] group-hover:bg-lime-300 transition p-1"
+          >
+            <img
+              class="w-8 group-hover:scale-95 duration-200"
+              src="./myImages/photo_camera_image_photography_icon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-3 border aspect-square group relative border-gray-400 rounded-lg flex-col flex text-white"
+      >
+        <div
+          class="positioning bg-slate-100 rounded-lg px-2.5 py-3 flex justify-between group-hover:-translate-y-1.5 group-hover:translate-x-1.5 duration-300"
+        >
+          <div class="projTitleContainer w-9/12">
+            <h3 class="mb-1 text-slate-800 font-semibold">Dairy Based Site</h3>
+            <span class="text-neutral-700">
+              An automated app for merchandising at retail stores specifically
+              designed for merchandisers.
+            </span>
+          </div>
+          <div
+            class="w-11 h-11 projIconContainer rounded-full shadow-[2px_2px_0_#000] flex items-center justify-center dark:group-hover:bg-[#ffbd80] group-hover:bg-lime-300 transition p-1"
+          >
+            <img
+              class="w-8 group-hover:scale-95 duration-200"
+              src="./myImages/dairy_icon.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------- Contact Form-------------------------------- -->
+
+    <div
+      id="ContactMe"
+      class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./assets/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none"
+    >
+      <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
+      <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+        I'd love to hear from you! If you have any questions, comments or
+        feedback, please use the form below.
+      </p>
+      <form class="max-w-2xl mx-auto dark:text-neutral-800">
+        <input
+          type="hidden"
+          name="subject"
+          value="Eliana Jade - New form Submission"
+        />
+        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required=""
+            name="name"
+          />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
+            required=""
+            name="email"
+          />
+        </div>
+        <textarea
+          rows="6"
+          placeholder="Enter your message"
+          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
+          required=""
+          name="message"
+        ></textarea>
+        <button
+          type="submit"
+          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
+        >
+          Submit now<img
+            src="myImages/right-arrow-dark.png"
+            alt=""
+            class="w-4"
+          />
+        </button>
+        <p class="mt-4"></p>
+      </form>
+    </div>
+    <div class="mt-15">
+      <div class="text-center">
+        <img
+          src="./myImages/11.png"
+          alt=""
+          class="w-36 mx-auto mb-2 dark:hidden"
+        /><img
+          src="./myImages/22.png"
+          alt=""
+          class="w-36 mx-auto mb-2 hidden dark:block"
+        />
+        <div class="w-max flex items-center gap-2 mx-auto">
+          <img src="./myImages/mail (1).png" alt="" class="w-6 dark:hidden" />
+          <img
+            src="./myImages/mail.png"
+            alt=""
+            class="w-6 hidden dark:block"
+          />iamshubhham@outlook.com
+        </div>
+      </div>
+      <div
+        class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6"
+      >
+        <p>© 2024 Shubham Paul. All rights reserved.</p>
+        <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/iamsshubham"
+              ><img
+              src="./myImages/3225194_app_facebook_logo_media_popular_icon.png"
+              alt=""
+              class="w-5 sm:w-7"
+            /></a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/paul1997/"
+              ><img
+              src="./myImages/317735_career_linkedin_icon.png"
+              alt=""
+              class="w-5 sm:w-7"
+            /></a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/iamsshubham"
+              ><img
+              src="./myImages/3225191_app_instagram_logo_media_popular_icon.png"
+              alt=""
+              class="w-5 sm:w-7"
+            />
+              </a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="./script.js">
+      </script>
+  </body>
+</html>
