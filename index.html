@@ -44,8 +44,16 @@
       </ul>
       <div class="toggleAndContact flex gap-3">
         <button id="theme-toggle-button" onclick="toggleTheme()">
-          <img class="w-5 dark:hidden" src="./myImages/moon_icon.png" alt="toggleIcon" />
-          <img class="w-5 hidden dark:block" src="./myImages/brightness.png" alt="toggleIcon" />
+          <img
+            class="w-5 dark:hidden"
+            src="./myImages/moon_icon.png"
+            alt="toggleIcon"
+          />
+          <img
+            class="w-5 hidden dark:block"
+            src="./myImages/brightness.png"
+            alt="toggleIcon"
+          />
         </button>
         <a
           class="rounded-full hidden border md:flex items-center gap-3 px-10 py-2.5 border-gray-900 dark:border-white"
@@ -60,20 +68,38 @@
             class="w-2.5 hidden dark:block"
             src="https://i.imgur.com/eMfgvjn.png"
             alt="altText"
-          /> 
+          />
         </a>
 
-        <button class="block md:hidden ml-3 " onclick="openMenu()">
-          <img src="./myImages/menu-black.png" alt="menuIcon" class="w-6 dark:hidden"/>
-          <img src="./myImages/menu-white.png" alt="menuIcon" class="w-6 hidden dark:block"/>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img
+            src="./myImages/menu-black.png"
+            alt="menuIcon"
+            class="w-6 dark:hidden"
+          />
+          <img
+            src="./myImages/menu-white.png"
+            alt="menuIcon"
+            class="w-6 hidden dark:block"
+          />
         </button>
       </div>
       <!-- ----------------------------------- mobile menu ---------------------- -->
-       <ul id="sideMenu" class="flex md:hidden gap-4 flex-col py-20 px-10 fixed top-0 bottom-0 -right-64 w-64 z-50 h-screen bg-rose-50 dark:bg-[#122620] dark:text-white transition duration-500">
-
+      <ul
+        id="sideMenu"
+        class="flex md:hidden gap-4 flex-col py-20 px-10 fixed top-0 bottom-0 -right-64 w-64 z-50 h-screen bg-rose-50 dark:bg-[#122620] dark:text-white transition duration-500"
+      >
         <div class="absolute top-6 right-6" onclick="closeMenu()">
-          <img src="./myImages/close-black.png" alt="placeholder" class="dark:hidden w-5 cursor-pointer"/>
-          <img src="./myImages/close-white.png" alt="placeholder" class="hidden dark:block w-5 cursor-pointer"/>
+          <img
+            src="./myImages/close-black.png"
+            alt="placeholder"
+            class="dark:hidden w-5 cursor-pointer"
+          />
+          <img
+            src="./myImages/close-white.png"
+            alt="placeholder"
+            class="hidden dark:block w-5 cursor-pointer"
+          />
         </div>
 
         <li><a href="#home" onclick="closeMenu()">Home</a></li>
@@ -82,7 +108,7 @@
         <li><a href="#services" onclick="closeMenu()">Services</a></li>
         <li><a href="#projects" onclick="closeMenu()">My Work</a></li>
         <li><a href="#ContactMe" onclick="closeMenu()">Contact Me</a></li>
-       </ul>
+      </ul>
     </nav>
     <br />
     <div class="flex flex-col items-center mt-14 mb-6 gap-6" id="home">
@@ -93,17 +119,19 @@
       />
       <h3 class="text-xl">Hi! I'm Shubham Paul</h3>
       <h1 class="text-4xl pl-4">full stack developer based in India.</h1>
-      <p class="pl-4">I am a full stack web developer with 2 years of experience</p>
+      <p class="pl-4">
+        I am a full stack web developer with 2 years of experience
+      </p>
       <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a
           href="#ContactMe"
-          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent "
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
           >contact me
           <img src="./myImages/right-arrow-dark.png" alt="" class="w-4" /></a
         ><a
           href="./docs/ShubhamPaul_2024.pdf"
           download=""
-          class="px-10 resumeBtn py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black "
+          class="px-10 resumeBtn py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
           >my resume <img src="./myImages/download-icon.png" alt="" class="w-4"
         /></a>
       </div>
@@ -378,12 +406,11 @@
                 src="./myImages/9042803_minus_icon.png"
                 alt="minus-icon"
             /></span>
-              <img
-                class="w-4 h-3 inline"
-                src="./myImages/9042803_minus_icon.png"
-                alt="minus-icon"
-            /></span>
-          </span>
+            <img
+              class="w-4 h-3 inline"
+              src="./myImages/9042803_minus_icon.png"
+              alt="minus-icon"
+          /></span>
         </label>
       </div>
       <div
@@ -441,8 +468,16 @@
       <div
         class="p-3 border border-gray-400 rounded-lg flex flex-col items-center hover:shadow-[4px_4px_0_#54473F] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 dark:hover:bg-[#172f28] dark:hover:shadow-white"
       >
-        <img class="w-9 mb-1.5 dark:hidden" src="./myImages/atom.png" alt="react logo" />
-        <img class="w-9 mb-1.5 hidden dark:block" src="./myImages/physics.png" alt="react logo" />
+        <img
+          class="w-9 mb-1.5 dark:hidden"
+          src="./myImages/atom.png"
+          alt="react logo"
+        />
+        <img
+          class="w-9 mb-1.5 hidden dark:block"
+          src="./myImages/physics.png"
+          alt="react logo"
+        />
         <h3 class="mb-1.5">ReactJs certification</h3>
 
         <!-- Hidden Checkbox for Toggling -->
@@ -780,35 +815,31 @@
           <li>
             <a target="_blank" href="https://www.facebook.com/iamsshubham"
               ><img
-              src="./myImages/3225194_app_facebook_logo_media_popular_icon.png"
-              alt=""
-              class="w-5 sm:w-7"
-            /></a
-            >
+                src="./myImages/3225194_app_facebook_logo_media_popular_icon.png"
+                alt=""
+                class="w-5 sm:w-7"
+            /></a>
           </li>
           <li>
             <a target="_blank" href="https://www.linkedin.com/in/paul1997/"
               ><img
-              src="./myImages/317735_career_linkedin_icon.png"
-              alt=""
-              class="w-5 sm:w-7"
-            /></a
-            >
+                src="./myImages/317735_career_linkedin_icon.png"
+                alt=""
+                class="w-5 sm:w-7"
+            /></a>
           </li>
           <li>
             <a target="_blank" href="https://www.instagram.com/iamshubhamm/"
               ><img
-              src="./myImages/3225191_app_instagram_logo_media_popular_icon.png"
-              alt=""
-              class="w-5 sm:w-7"
-            />
-              </a
-            >
+                src="./myImages/3225191_app_instagram_logo_media_popular_icon.png"
+                alt=""
+                class="w-5 sm:w-7"
+              />
+            </a>
           </li>
         </ul>
       </div>
     </div>
-    <script type="text/javascript" src="./script.js">
-      </script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
