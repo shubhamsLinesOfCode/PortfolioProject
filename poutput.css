@@ -1903,6 +1903,22 @@ body > div:nth-of-type(2) img:hover {
   background-color: transparent;
 }
 
+.dark\:bg-opacity-50:is(.dark *) {
+  --tw-bg-opacity: 0.5;
+}
+
+.dark\:bg-opacity-80:is(.dark *) {
+  --tw-bg-opacity: 0.8;
+}
+
+.dark\:bg-opacity-90:is(.dark *) {
+  --tw-bg-opacity: 0.9;
+}
+
+.dark\:bg-opacity-95:is(.dark *) {
+  --tw-bg-opacity: 0.95;
+}
+
 .dark\:bg-none:is(.dark *) {
   background-image: none;
 }
