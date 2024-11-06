@@ -1819,7 +1819,7 @@ body > div:nth-of-type(2) img:hover {
 }
 
 #skills, #home, #services, #projects{
-  scroll-margin-top: 50px;
+  scroll-margin-top: 56px;
 }
 
 .hover\:-translate-y-1:hover {
