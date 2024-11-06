@@ -463,3 +463,7 @@ section{
     transform: scale(1.05);
     cursor:pointer; /* Example scaling effect */
   }
+
+   #skills, #home, #services, #projects{
+    scroll-margin-top: 50px;
+  }

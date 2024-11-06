@@ -51,3 +51,6 @@ function openMenu() {
 function closeMenu() {
   sideMenu.style.transform = "translateX(16rem)";
 }
+
+
+
