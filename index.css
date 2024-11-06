@@ -145,7 +145,7 @@ section{
 }
 .horizontal-bars .bar .progress-line span{
     height: 100%;
-    background-color: hsl(29, 100%, 75%);
+    background-color: #fcd462;
     position: absolute;
     border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -252,7 +252,7 @@ section{
 }
 .path{
     stroke-width: 10;
-    stroke: hsl(29, 100%, 75%);
+    stroke: #fcd462;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;

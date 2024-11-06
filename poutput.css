@@ -628,12 +628,12 @@ video {
   top: 1.5rem;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .-z-10 {
   z-index: -10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-\[10\%\] {
@@ -695,6 +695,10 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .mt-1\.5 {
@@ -1106,6 +1110,11 @@ video {
   padding-bottom: 6%;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1421,7 +1430,7 @@ section{
 
 .horizontal-bars .bar .progress-line span{
   height: 100%;
-  background-color: hsl(29, 100%, 75%);
+  background-color: #fcd462;
   position: absolute;
   border-radius: 10px;
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -1545,7 +1554,7 @@ section{
 
 .path{
   stroke-width: 10;
-  stroke: hsl(29, 100%, 75%);
+  stroke: #fcd462;
   fill: transparent;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
@@ -1893,6 +1902,11 @@ body > div:nth-of-type(2) img:hover {
   background-image: none;
 }
 
+.dark\:text-\[\#fcd462\]:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(252 212 98 / var(--tw-text-opacity));
+}
+
 .dark\:text-black:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1901,11 +1915,6 @@ body > div:nth-of-type(2) img:hover {
 .dark\:text-neutral-800:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(38 38 38 / var(--tw-text-opacity));
-}
-
-.dark\:text-orange-300:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .dark\:text-white:is(.dark *) {
@@ -1928,6 +1937,11 @@ body > div:nth-of-type(2) img:hover {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.dark\:hover\:bg-\[\#091310\]:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 19 16 / var(--tw-bg-opacity));
+}
+
 .dark\:hover\:bg-\[\#172f28\]:hover:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(23 47 40 / var(--tw-bg-opacity));
@@ -1943,6 +1957,11 @@ body > div:nth-of-type(2) img:hover {
   background-color: rgb(255 189 128 / var(--tw-bg-opacity));
 }
 
+.group:hover .dark\:group-hover\:bg-\[\#fcd462\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 212 98 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:mt-0 {
     margin-top: 0px;
@@ -1954,6 +1973,10 @@ body > div:nth-of-type(2) img:hover {
 
   .sm\:w-14 {
     width: 3.5rem;
+  }
+
+  .sm\:w-6 {
+    width: 1.5rem;
   }
 
   .sm\:w-7 {
