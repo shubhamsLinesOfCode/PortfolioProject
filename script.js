@@ -52,5 +52,18 @@ function closeMenu() {
   sideMenu.style.transform = "translateX(16rem)";
 }
 
+// Show button after scrolling down a bit
+window.addEventListener("scroll", () => {
+  const backToTopButton = document.getElementById("backToTop");
+  if (window.scrollY > 480) {
+    // Show when scrolled 480px
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+});
 
-
+// Scroll to top smoothly on button click
+document.getElementById("backToTop").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

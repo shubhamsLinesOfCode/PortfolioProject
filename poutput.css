@@ -1822,6 +1822,31 @@ body > div:nth-of-type(2) img:hover {
   scroll-margin-top: 56px;
 }
 
+/* Back to Top Button Styles */
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 23px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  display: none;
+  /* Hidden by default */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+  background-color: #555;
+}
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1903,22 +1928,6 @@ body > div:nth-of-type(2) img:hover {
   background-color: transparent;
 }
 
-.dark\:bg-opacity-50:is(.dark *) {
-  --tw-bg-opacity: 0.5;
-}
-
-.dark\:bg-opacity-80:is(.dark *) {
-  --tw-bg-opacity: 0.8;
-}
-
-.dark\:bg-opacity-90:is(.dark *) {
-  --tw-bg-opacity: 0.9;
-}
-
-.dark\:bg-opacity-95:is(.dark *) {
-  --tw-bg-opacity: 0.95;
-}
-
 .dark\:bg-opacity-85:is(.dark *) {
   --tw-bg-opacity: 0.85;
 }
@@ -1954,12 +1963,6 @@ body > div:nth-of-type(2) img:hover {
 .dark\:shadow-white\/20:is(.dark *) {
   --tw-shadow-color: rgb(255 255 255 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.dark\:backdrop-blur-lg:is(.dark *) {
-  --tw-backdrop-blur: blur(16px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .dark\:hover\:bg-\[\#091310\]:hover:is(.dark *) {
