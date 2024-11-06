@@ -1919,6 +1919,10 @@ body > div:nth-of-type(2) img:hover {
   --tw-bg-opacity: 0.95;
 }
 
+.dark\:bg-opacity-85:is(.dark *) {
+  --tw-bg-opacity: 0.85;
+}
+
 .dark\:bg-none:is(.dark *) {
   background-image: none;
 }
