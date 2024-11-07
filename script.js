@@ -55,8 +55,8 @@ function closeMenu() {
 // Show button after scrolling down a bit
 window.addEventListener("scroll", () => {
   const backToTopButton = document.getElementById("backToTop");
-  if (window.scrollY > 480) {
-    // Show when scrolled 480px
+  if (window.scrollY > 600) {
+    // Show when scrolled 600px
     backToTopButton.style.display = "block";
   } else {
     backToTopButton.style.display = "none";
