@@ -32,11 +32,11 @@ function openMenu() {
   gsap.set("#sideMenu li a", { opacity: 0 });
   gsap.to("#sideMenu li a", {
     display: "block",
-    x: 50,
+    x: 48,
     opacity: 1,
-    duration: 1.15,
-    delay: 1,
-    stagger: 0.4,
+    duration: 1.05,
+    delay: 0.75,
+    stagger: 0.3,
   });
 }
 function closeMenu() {
